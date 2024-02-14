@@ -1,0 +1,170 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue0;\red26\green29\blue34;
+\red42\green44\blue51;\red245\green247\blue251;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;\cssrgb\c13725\c15294\c18039;
+\cssrgb\c21961\c22745\c25882;\cssrgb\c96863\c97647\c98824;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid1\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid101\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid201\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid301\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\fs48 \cf0 \cb2 \expnd0\expndtw0\kerning0
+Shopify App Analysis\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs36 \cf0 \cb2 You have been hired to review the landscape of apps on the Shopify platform, using data scraped from publicly available Shopify websites. You want to figure out what key factors play into the success of a Shopify app.\cb1 \
+\cb2 For each numbered part in this project, you should produce a page in a Power BI report. Each question itself should be a visualization. For each subquestion, take a screenshot of your entire screen to show your work.\cb1 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\fs48 \cf0 \cb2 The Data\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs36 \cf0 \cb2 The 
+\f1\b shopify.xlsx
+\f0\b0  dataset contains public data scraped from the {\field{\*\fldinst{HYPERLINK "https://apps.shopify.com/"}}{\fldrslt \cf4 \ul \ulc4 Shopify App Store}}. It includes 4 tables:\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf0 \cb2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+apps:
+\f0\b0  Details of the apps on Shopify apps marketplace\cb1 \
+\ls1\ilvl0
+\f1\b \cb2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+apps_categories:
+\f0\b0  Join tables to connect apps with categories\cb1 \
+\ls1\ilvl0
+\f1\b \cb2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+categories:
+\f0\b0  Categories of the apps. Each app has multiple categories\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf0 \cb2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+reviews
+\f0\b0 : Each review (row) contains information on user opinion about the related app (rating and comment). Also, it contains the response from the developer if present.\cb1 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\fs48 \cf0 \cb2 Part 1: App Landscape\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs36 \cf0 \cb2 First, we\'92ll find key statistics on the types of apps that are out there. This question uses the 
+\f1\b Apps
+\f0\b0  table. Make a new sheet in your Power BI (
+\f2\fs28\fsmilli14400 \cf5 \cb6 .pibx
+\f0\fs36 \cf0 \cb2  ) file called 
+\f1\b App Landscape
+\f0\b0  for this question. Remember to take a screenshot for each question answered.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls2\ilvl0\cf0 \cb2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Make a 
+\f1\b KPI Card
+\f0\b0  (a visual with a single number) that counts the unique number of apps. Add it to your App Landscape sheet.\cb1 \
+\ls2\ilvl0\cb2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Make a 
+\f1\b Line Chart
+\f0\b0  getting the sum of the review count on the Y-axis, and the lastmod date on the X-Axis. 
+\f1\b Hint:
+\f0\b0  lastmod date should not be in \'93date hierarchy\'94 format for your X-Axis.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf0 \cb2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Make a 
+\f1\b Scatterplot
+\f0\b0  with the reviews_count on the X axis and the average rating on the Y axis. Annotate your interpretation of this with an inserted 
+\f1\b Text Box
+\f0\b0  next to this scatterplot.\cb1 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\fs48 \cf0 \cb2 Part 2: Reviews\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs36 \cf0 \cb2 Make a new sheet in your 
+\f2\fs28\fsmilli14400 \cf5 \cb6 .pibx
+\f0\fs36 \cf0 \cb2  file for this new section, named 
+\f1\b Reviews.
+\f0\b0  Remember to take a screenshot for each question answered.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls3\ilvl0\cf0 \cb2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Create a new Column in the 
+\f1\b Reviews
+\f0\b0  table named 
+\f2\fs28\fsmilli14400 \cf5 \cb6 helpful_reviews
+\f0\fs36 \cf0 \cb2  using a DAX expression, which multiplies the 
+\f2\fs28\fsmilli14400 \cf5 \cb6 rating
+\f0\fs36 \cf0 \cb2  by 
+\f2\fs28\fsmilli14400 \cf5 \cb6 1+helpful_count
+\f0\fs36 \cf0 \cb2  to weigh the reviews by how helpful they\'92ve been found. The formula in mathematical form would be 
+\f2\fs28\fsmilli14400 \cf5 \cb6 rating * (1+helpful_count)
+\f0\fs36 \cf0 \cb2 . Make a Card with the average value of the new 
+\f2\fs28\fsmilli14400 \cf5 \cb6 helpful_reviews
+\f0\fs36 \cf0 \cb2  column.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0\cf0 \cb2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Create a new Column in the 
+\f1\b Reviews
+\f0\b0  table named 
+\f2\fs28\fsmilli14400 \cf5 \cb6 developer_answered
+\f0\fs36 \cf0 \cb2  using a DAX expression, which is 1 (or TRUE) if the 
+\f2\fs28\fsmilli14400 \cf5 \cb6 developer_reply
+\f0\fs36 \cf0 \cb2  column is not blank and 0 (or FALSE) if the column row is blank. Make a scatterplot comparing the average 
+\f2\fs28\fsmilli14400 \cf5 \cb6 rating
+\f0\fs36 \cf0 \cb2  on the Y-Axis by the value of the 
+\f2\fs28\fsmilli14400 \cf5 \cb6 developer_answered
+\f0\fs36 \cf0 \cb2  column on the X-Axis.\cb1 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\fs48 \cf0 \cb2 Part 3: App Reviews\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs36 \cf0 \cb2 Make a new sheet in your 
+\f2\fs28\fsmilli14400 \cf5 \cb6 .pibx
+\f0\fs36 \cf0 \cb2  file for this new section, named 
+\f1\b App Reviews.
+\f0\b0  Remember to take a screenshot for each question answered.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls4\ilvl0\cf0 \cb2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+In the data model, create a new relationship between the 
+\f1\b Reviews
+\f0\b0  table and the 
+\f1\b Apps
+\f0\b0  table. Use the 
+\f2\fs28\fsmilli14400 \cf5 \cb6 app_id
+\f0\fs36 \cf0 \cb2  column from the 
+\f1\b Reviews
+\f0\b0  table, the 
+\f2\fs28\fsmilli14400 \cf5 \cb6 id
+\f0\fs36 \cf0 \cb2  column from the 
+\f1\b Apps
+\f0\b0  table. Make the relationship 
+\f1\b many-to-one
+\f0\b0  built as 
+\f1\b many
+\f0\b0  (Reviews table) to 
+\f1\b one
+\f0\b0  (Apps table). Using this new table, make a bar chart with the 
+\f2\fs28\fsmilli14400 \cf5 \cb6 developer
+\f0\fs36 \cf0 \cb2  on the X-Axis, and the 
+\f2\fs28\fsmilli14400 \cf5 \cb6 sum of rating
+\f0\fs36 \cf0 \cb2  on the Y-Axis.\cb1 \
+\ls4\ilvl0\cb2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+The chart in the previous question is misleading because an app could have a high 
+\f2\fs28\fsmilli14400 \cf5 \cb6 sum of rating
+\f0\fs36 \cf0 \cb2  because it has many one-star reviews. Make a new bar chart with 
+\f2\fs28\fsmilli14400 \cf5 \cb6 developer
+\f0\fs36 \cf0 \cb2  on the X-Axis against the 
+\f2\fs28\fsmilli14400 \cf5 \cb6 helpful_review
+\f0\fs36 \cf0 \cb2  average on the Y-Axis.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0\cf0 \cb2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Which developers are the most responsive? Make a bar chart with the 
+\f2\fs28\fsmilli14400 \cf5 \cb6 developer
+\f0\fs36 \cf0 \cb2  from the apps table and the 
+\f2\fs28\fsmilli14400 \cf5 \cb6 developer_answered
+\f0\fs36 \cf0 \cb2  column you created in question 2.2. Add a 
+\f1\b Filter
+\f0\b0  for this visual only which selects only the rows where 
+\f2\fs28\fsmilli14400 \cf5 \cb6 reviews_count
+\f0\fs36 \cf0 \cb2  is greater than 500.}
